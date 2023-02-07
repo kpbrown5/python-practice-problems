@@ -10,12 +10,12 @@ def rows_and_columns_contain(lst, target):
 
     ### Replace pass with your code
     result = True
-    for i, _ in enumerate(grid):
-        if target not in grid[i]:
+    for i, _ in enumerate(lst):
+        if target not in lst[i]:
             result = False
             break
-        for j, _ in enumerate(grid[0]):
-            col = grid[i][j]
+        for j, _ in enumerate(lst[0]):
+            col = lst[i][j]
             if target not in col:
                 result = False
                 break

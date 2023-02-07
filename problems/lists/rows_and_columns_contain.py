@@ -14,11 +14,11 @@ def rows_and_columns_contain(lst, target):
         if target not in lst[i]:
             result = False
             break
-        for j, _ in enumerate(lst[0]):
-            col = lst[i][j]
-            if target not in col:
-                result = False
-                break
+    for j, _ in enumerate(lst[0]):
+        col = [lst[i][j] for i in range(len(lst))]
+        if target not in col:
+            result = False
+            break
     return result
 
 

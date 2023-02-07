@@ -10,9 +10,9 @@ def replace(lst, replacee, replacer):
 
     ### Replace pass with your code
     n = 0
-    for val in lst:
+    for i, val in enumerate(lst):
         if val == replacee:
-            val = replacer
+            lst[i] = replacer
         else:
             n += 1
     if n == len(lst):

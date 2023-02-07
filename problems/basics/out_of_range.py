@@ -4,7 +4,7 @@ def out_of_range(x, lb, ub):
 
     ### YOUR CODE GOES HERE
     # Replace "None" with the correct expression
-    r = x in range(1b, ub + 1)
+    r = 1b <= x <= ub
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return r

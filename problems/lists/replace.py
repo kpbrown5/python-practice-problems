@@ -9,7 +9,10 @@ def replace(lst, replacee, replacer):
     """
 
     ### Replace pass with your code
-    pass
+    for val in lst:
+        if val == replacee:
+            val = replacer
+    return lst
 
 
 #############################################################
